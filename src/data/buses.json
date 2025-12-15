@@ -1,0 +1,18 @@
+[
+    {
+        "busNo": "189",
+        "lat": 12.9716,
+        "lng": 77.5946,
+        "area": "MG Road",
+        "eta": "6",
+        "status": "On Time"
+    },
+    {
+        "busNo": "335E",
+        "lat": 12.9592,
+        "lng": 77.7477,
+        "area": "Marathahalli",
+        "eta": "12",
+        "status": "Detailed"
+    }
+]

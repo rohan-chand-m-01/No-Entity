@@ -1,0 +1,41 @@
+{
+  "appTitle": "TravelEasy",
+  "nav": {
+    "home": "Home",
+    "track": "Live Track",
+    "chat": "Assistant",
+    "ivr": "Call Demo",
+    "about": "About"
+  },
+  "home": {
+    "heroTitle": "Inclusive Public Transport",
+    "heroSubtitle": "Accessible live tracking and assistance for everyone.",
+    "ctaTrack": "Track Bus",
+    "ctaChat": "Ask Assistant"
+  },
+  "tracking": {
+    "title": "Live Bus Tracking",
+    "placeholder": "Enter Bus Number (e.g., 189)",
+    "search": "Find Bus",
+    "eta": "ETA",
+    "minutes": "mins",
+    "location": "Current Location",
+    "notFound": "Bus not found. Try 189."
+  },
+  "chat": {
+    "title": "Voice Assistant",
+    "placeholder": "Type or say something...",
+    "speak": "Speak Response",
+    "listening": "Listening..."
+  },
+  "ivr": {
+    "title": "Call-to-SMS Demo",
+    "instruction": "Simulate a phone call interaction.",
+    "simulateBtn": "Simulate Call Input",
+    "smsReceived": "SMS Received:"
+  },
+  "about": {
+    "title": "About Us",
+    "mission": "Making public transport accessible through technology."
+  }
+}
