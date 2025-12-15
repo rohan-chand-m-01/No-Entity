@@ -3,25 +3,78 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Violet-Navy #2C1C51 */
+    --primary: 258 48% 21%;
+
+    /* Coral #E58C84 */
+    --accent: 5 66% 71%;
+
+    /* Muted Plum #8F5774 */
+    --secondary: 329 24% 45%;
+
+    /* White */
+    --background: 0 0% 100%;
+
+    /* Very subtle warm white #FDFCFD */
+    --surface: 300 2% 99%;
+  }
+
+  .dark {
+    /* White for text */
+    --primary: 0 0% 100%;
+
+    /* Coral #E58C84 (Keep accent same) */
+    --accent: 5 66% 71%;
+
+    /* Dusty Rose/Lighter Plum for secondary text */
+    --secondary: 351 38% 75%;
+
+    /* Deep Violet-Navy for background */
+    --background: 258 48% 10%;
+
+    /* Slightly lighter Violet for surface */
+    --surface: 258 48% 15%;
+  }
+
   body {
-    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+    @apply bg-background text-primary font-sans antialiased selection:bg-accent selection:text-primary transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight font-bold;
   }
 }
 
 @layer utilities {
   .glass-card {
-    @apply bg-white/80 backdrop-blur-xl border border-white/50 shadow-lg rounded-2xl;
+    /* Redefined to be a "Clean Card" - no blur, just white and border */
+    @apply bg-surface border border-slate-200 shadow-clean rounded-xl transition-all duration-300;
   }
 
-  .glass-button {
-    @apply bg-white/50 hover:bg-white/80 backdrop-blur-md border border-white/50 shadow-sm transition-all duration-200 rounded-xl px-4 py-2 font-medium text-slate-800 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  .primary-button {
+    @apply bg-primary text-white dark:text-background hover:opacity-90 shadow-sm rounded-lg px-4 py-2 font-medium transition-colors duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2;
   }
 
+  .secondary-button {
+    @apply bg-white dark:bg-transparent text-primary dark:text-white border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 shadow-sm rounded-lg px-4 py-2 font-medium transition-all duration-200 active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  /* Keeping gradient-text for subtle usage, but making it blue-based */
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-pink-500 font-bold;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent font-extrabold;
   }
 
   .page-container {
-    @apply min-h-screen px-4 py-6 max-w-lg mx-auto md:max-w-4xl lg:max-w-7xl pb-20;
+    @apply min-h-screen px-4 py-8 max-w-7xl mx-auto;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 bg-surface border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all duration-200 text-primary placeholder:text-secondary;
   }
 }

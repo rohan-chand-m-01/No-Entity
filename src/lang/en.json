@@ -1,5 +1,17 @@
 {
-  "appTitle": "TravelEasy",
+  "appTitle": "LocalGati",
+  "navAction": {
+    "track": "Go to Tracking",
+    "chat": "Start Chat",
+    "ivr": "Try Demo",
+    "about": "Read More"
+  },
+  "navDesc": {
+    "track": "View real-time bus locations and accurate ETAs.",
+    "chat": "Instant answers from our AI assistant.",
+    "ivr": "Voice-enabled SMS services demo.",
+    "about": "Mission, vision, and team details."
+  },
   "nav": {
     "home": "Home",
     "track": "Live Track",
@@ -8,10 +20,25 @@
     "about": "About"
   },
   "home": {
-    "heroTitle": "Inclusive Public Transport",
-    "heroSubtitle": "Accessible live tracking and assistance for everyone.",
-    "ctaTrack": "Track Bus",
-    "ctaChat": "Ask Assistant"
+    "heroTitle": "Your Local Travel, Made Simple",
+    "heroSubtitle": "Inclusive, Accessible, Reliable.",
+    "ctaTrack": "Start Tracking",
+    "ctaLearn": "Learn More",
+    "badge": "Live Transit System",
+    "features": {
+      "secure": {
+        "title": "Secure & Reliable",
+        "desc": "Verified data sources for trusted travel information."
+      },
+      "realtime": {
+        "title": "Real-Time Updates",
+        "desc": "Live GPS tracking with minimal latency."
+      },
+      "inclusive": {
+        "title": "Inclusive Design",
+        "desc": "Multilingual support for accessible transit."
+      }
+    }
   },
   "tracking": {
     "title": "Live Bus Tracking",
@@ -20,22 +47,97 @@
     "eta": "ETA",
     "minutes": "mins",
     "location": "Current Location",
-    "notFound": "Bus not found. Try 189."
+    "notFound": "Bus not found. Try 189.",
+    "selectPrompt": "Select a bus to view live status.",
+    "liveStatus": "Live Status:"
+  },
+  "footer": {
+    "platform": "Platform",
+    "resources": "Resources",
+    "contact": "Contact",
+    "links": {
+      "liveTracking": "Live Tracking",
+      "aiAssistant": "AI Assistant",
+      "ivrServices": "IVR Services",
+      "aboutUs": "About Us",
+      "docs": "Documentation",
+      "community": "Community",
+      "help": "Help Center",
+      "privacy": "Privacy Policy"
+    },
+    "desc": "Empowering cities with inclusive, real-time public transport tracking. Built for everyone.",
+    "systemOp": "System Operational",
+    "rights": "All rights reserved.",
+    "social": {
+      "github": "GitHub",
+      "twitter": "Twitter",
+      "email": "Email"
+    }
   },
   "chat": {
     "title": "Voice Assistant",
-    "placeholder": "Type or say something...",
+    "headerTitle": "Support Assistant",
+    "headerSubtitle": "Live AI Support",
+    "placeholder": "Type your message...",
     "speak": "Speak Response",
-    "listening": "Listening..."
+    "listening": "Listening...",
+    "description": "Ask questions about bus routes, timings, and locations."
   },
   "ivr": {
     "title": "Call-to-SMS Demo",
     "instruction": "Simulate a phone call interaction.",
-    "simulateBtn": "Simulate Call Input",
-    "smsReceived": "SMS Received:"
+    "simulateBtn": "Simulate Call",
+    "smsReceived": "SMS Received:",
+    "steps": {
+      "dial": {
+        "title": "Dial the Number",
+        "desc": "Users call our toll-free hotline to check bus status."
+      },
+      "sms": {
+        "title": "Receive SMS",
+        "desc": "Get instant details about bus location and ETA via SMS."
+      }
+    },
+    "demoTitle": "Try the Demo",
+    "demoDesc": "Enter a number to simulate an IVR response.",
+    "phoneLabel": "Phone Number",
+    "badge": "Accessible Transit",
+    "status": {
+      "processing": "Processing...",
+      "success": "Sent Successfully",
+      "error": "Failed to send SMS.",
+      "sentTo": "SMS sent to"
+    },
+    "note": "Note: This is a simulation. No real phone call is made."
   },
   "about": {
     "title": "About Us",
-    "mission": "Making public transport accessible through technology."
-  }
+    "mission": "Making public transport accessible through technology.",
+    "heroDesc": "We are dedicated to revolutionizing public transportation in Bengaluru by making it accessible, predictable, and stress-free for everyone.",
+    "visionTitle": "Our Core Vision",
+    "visionText": "Public transport is the lifeline of any major city. However, uncertainty and lack of information can make it a daunting experience. Our goal is to bridge the gap between commuters and transit systems using advanced technology like AI and real-time GPS tracking. We believe in an inclusive future where technology serves everyone."
+  },
+  "chatbotResponses": {
+    "greeting": "Hello! I help you track buses. Ask me 'Where is bus 189?'",
+    "greetingHelper": "Hello! I can help you track buses. Try asking 'Where is bus 189?' or 'When will bus 335E arrive?'.",
+    "location": "Bus {busNo} is currently at {area}.",
+    "eta": "Bus {busNo} will arrive in approximately {eta} minutes.",
+    "fullStatus": "Bus {busNo} is at {area} and arriving in {eta} mins.",
+    "unknownBus": "I'm not sure which bus you mean. I have information for: {available}.",
+    "fallback": "I didn't understand that. You can ask me about bus locations, for example: 'Where is bus 189?'"
+  },
+  "liveTracking": {
+    "popup": "Bus {busNo} - {area}"
+  },
+  "locations": {
+    "MG Road": "MG Road",
+    "Marathahalli": "Marathahalli",
+    "Bengaluru": "Bengaluru"
+  },
+  "busStatus": {
+    "On Time": "On Time",
+    "Detailed": "Detailed",
+    "Delayed": "Delayed"
+  },
+  "emailLabel": "Email"
 }

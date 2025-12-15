@@ -8,25 +8,29 @@ import Chatbot from './pages/Chatbot';
 import IvrDemo from './pages/IvrDemo';
 import About from './pages/About';
 
+import { ThemeProvider } from './hooks/useTheme';
+
 function App() {
   return (
     <Router>
       <LanguageProvider>
-        <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-violet-200 selection:text-violet-900">
-          <Navbar />
-          <main className="flex-grow pt-20">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/active-tracker" element={<LiveTracking />} />
-              {/* Note: I used /active-tracking in Navbar, fixing consistency */}
-              <Route path="/active-tracking" element={<LiveTracking />} />
-              <Route path="/chat" element={<Chatbot />} />
-              <Route path="/ivr-demo" element={<IvrDemo />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <div className="flex flex-col min-h-screen bg-background text-primary font-sans selection:bg-accent selection:text-white">
+            <Navbar />
+            <main className="flex-grow pt-20">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/active-tracker" element={<LiveTracking />} />
+                {/* Note: I used /active-tracking in Navbar, fixing consistency */}
+                <Route path="/active-tracking" element={<LiveTracking />} />
+                <Route path="/chat" element={<Chatbot />} />
+                <Route path="/ivr-demo" element={<IvrDemo />} />
+                <Route path="/about" element={<About />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </LanguageProvider>
     </Router>
   );

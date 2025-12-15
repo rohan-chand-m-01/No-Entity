@@ -1,7 +1,7 @@
 export const ivrWelcome = async (): Promise<string> => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve("Welcome to TravelEasy. Press 1 for ETA, 2 for Location.");
+            resolve("Welcome to LocalGati. Press 1 for ETA, 2 for Location.");
         }, 300);
     });
 };
