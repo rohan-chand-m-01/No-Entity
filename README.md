@@ -36,6 +36,18 @@ We solve the "Information Black Hole" in public transport by providing **Verifie
 
 ## 🛠️ Technology Stack
 
+<div align="center">
+
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+[![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio&logoColor=white)](https://www.twilio.com/)
+[![Vite](https://img.shields.io/badge/Vite-B33030?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+
+</div>
+
 *   **Frontend**: React `(v18)`, TypeScript, Tailwind CSS, Framer Motion
 *   **Backend**: Node.js, Express, Twilio SDK
 *   **AI/ML**: Web Speech API (Voice Recognition), Custom Simulator Logic
