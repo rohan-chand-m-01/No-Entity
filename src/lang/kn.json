@@ -75,9 +75,9 @@
         }
     },
     "chat": {
-        "title": "ದನಿ ಸಹಾಯಕ",
-        "headerTitle": "ಬೆಂಬಲ ಸಹಾಯಕ",
-        "headerSubtitle": "ನೇರ ಎಐ ಬೆಂಬಲ",
+        "title": "ಗತಿ ಸಹಾಯಕ",
+        "headerTitle": "ಗತಿ ಸಹಾಯಕ",
+        "headerSubtitle": "ನಿಮ್ಮ ಎಐ ಪ್ರಯಾಣ ಸಂಗಾತಿ",
         "placeholder": "ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಟೈಪ್ ಮಾಡಿ...",
         "speak": "ಪ್ರತಿಕ್ರಿಯೆ ಆಲಿಸಿ",
         "listening": "ಆಲಿಸುತ್ತಿದೆ...",

@@ -1,0 +1,4 @@
+{
+    "sms_template": "बस {{busNo}} {{nextStop}} से {{eta}} दूर है। दूरी: {{distance}} किमी। रूट: {{route}}।",
+    "eta_text": "{{minutes}} मिनट"
+}

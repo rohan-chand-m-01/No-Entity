@@ -16,34 +16,59 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-interface MapViewProps {
+interface MapMarker {
+    id: string;
     lat: number;
     lng: number;
-    popup: string;
+    popupContent: string;
 }
 
-const RecenterAutomically = ({ lat, lng }: { lat: number, lng: number }) => {
+interface MapViewProps {
+    markers: MapMarker[];
+    center?: [number, number]; // Optional center override
+}
+
+const UpdateMapCenter = ({ center, markers }: { center?: [number, number], markers: MapMarker[] }) => {
     const map = useMap();
+
     useEffect(() => {
-        map.setView([lat, lng]);
-    }, [lat, lng, map]);
+        if (center) {
+            map.flyTo(center, 13);
+        } else if (markers.length > 0) {
+            // Logic to fit bounds if many markers, or center if one
+            if (markers.length === 1) {
+                map.flyTo([markers[0].lat, markers[0].lng], 14);
+            } else {
+                // Ideally fit bounds here, for now just center on the first one or a default
+                // Simple approach: Center on the first one or stay put
+                // In a real app we'd use L.latLngBounds
+            }
+        }
+    }, [center, markers, map]);
+
     return null;
 }
 
-const MapView: React.FC<MapViewProps> = ({ lat, lng, popup }) => {
+const MapView: React.FC<MapViewProps> = ({ markers, center }) => {
+    const defaultCenter: [number, number] = [12.9716, 77.5946]; // Bangalore
+
     return (
         <div className="h-full w-full rounded-2xl overflow-hidden shadow-inner border border-slate-200">
-            <MapContainer center={[lat, lng]} zoom={13} scrollWheelZoom={false} className="h-full w-full">
+            <MapContainer center={center || defaultCenter} zoom={11} scrollWheelZoom={true} className="h-full w-full">
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker position={[lat, lng]}>
-                    <Popup>
-                        {popup}
-                    </Popup>
-                </Marker>
-                <RecenterAutomically lat={lat} lng={lng} />
+
+                {markers.map(marker => (
+                    <Marker key={marker.id} position={[marker.lat, marker.lng]}>
+                        <Popup>
+                            {marker.popupContent}
+                        </Popup>
+                    </Marker>
+                ))}
+
+                <UpdateMapCenter center={center} markers={markers} />
             </MapContainer>
         </div>
     );

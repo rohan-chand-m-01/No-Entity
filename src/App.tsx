@@ -10,6 +10,8 @@ import About from './pages/About';
 
 import { ThemeProvider } from './hooks/useTheme';
 
+import AssistantWidget from './components/AssistantWidget';
+
 function App() {
   return (
     <Router>
@@ -28,6 +30,7 @@ function App() {
                 <Route path="/about" element={<About />} />
               </Routes>
             </main>
+            <AssistantWidget />
             <Footer />
           </div>
         </ThemeProvider>

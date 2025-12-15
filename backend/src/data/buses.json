@@ -1,0 +1,942 @@
+[
+    {
+        "busNo": "KA-57-189",
+        "routeId": "RMN-BID-KNG",
+        "routeName": "Ramanagara - Bidadi - Kengeri",
+        "speed": 35,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara KSRTC Bus Stand",
+                "lat": 12.7209,
+                "lng": 77.2799
+            },
+            {
+                "name": "Channapatna Checkpost",
+                "lat": 12.6518,
+                "lng": 77.2089
+            },
+            {
+                "name": "Bidadi Industrial Area",
+                "lat": 12.7984,
+                "lng": 77.3872
+            },
+            {
+                "name": "Kengeri Satellite Bus Stand",
+                "lat": 12.9174,
+                "lng": 77.4836
+            }
+        ],
+        "lat": 12.7209,
+        "lng": 77.2799
+    },
+    {
+        "busNo": "KA-57-190",
+        "routeId": "RMN-BID-KNG",
+        "routeName": "Ramanagara - Bidadi - Kengeri",
+        "speed": 38,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara KSRTC Bus Stand",
+                "lat": 12.7209,
+                "lng": 77.2799
+            },
+            {
+                "name": "Channapatna Checkpost",
+                "lat": 12.6518,
+                "lng": 77.2089
+            },
+            {
+                "name": "Bidadi Industrial Area",
+                "lat": 12.7984,
+                "lng": 77.3872
+            },
+            {
+                "name": "Kengeri Satellite Bus Stand",
+                "lat": 12.9174,
+                "lng": 77.4836
+            }
+        ],
+        "lat": 12.6518,
+        "lng": 77.2089
+    },
+    {
+        "busNo": "KA-57-191",
+        "routeId": "RMN-BID-KNG",
+        "routeName": "Ramanagara - Bidadi - Kengeri",
+        "speed": 33,
+        "currentStopIndex": 2,
+        "nextStopIndex": 3,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara KSRTC Bus Stand",
+                "lat": 12.7209,
+                "lng": 77.2799
+            },
+            {
+                "name": "Channapatna Checkpost",
+                "lat": 12.6518,
+                "lng": 77.2089
+            },
+            {
+                "name": "Bidadi Industrial Area",
+                "lat": 12.7984,
+                "lng": 77.3872
+            },
+            {
+                "name": "Kengeri Satellite Bus Stand",
+                "lat": 12.9174,
+                "lng": 77.4836
+            }
+        ],
+        "lat": 12.7984,
+        "lng": 77.3872
+    },
+    {
+        "busNo": "KA-57-192",
+        "routeId": "RMN-BID-KNG",
+        "routeName": "Ramanagara - Bidadi - Kengeri",
+        "speed": 36,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Ramanagara KSRTC Bus Stand",
+                "lat": 12.7209,
+                "lng": 77.2799
+            },
+            {
+                "name": "Channapatna Checkpost",
+                "lat": 12.6518,
+                "lng": 77.2089
+            },
+            {
+                "name": "Bidadi Industrial Area",
+                "lat": 12.7984,
+                "lng": 77.3872
+            },
+            {
+                "name": "Kengeri Satellite Bus Stand",
+                "lat": 12.9174,
+                "lng": 77.4836
+            }
+        ],
+        "lat": 12.686,
+        "lng": 77.244
+    },
+    {
+        "busNo": "KA-42-315",
+        "routeId": "HAR-BID-KUM",
+        "routeName": "Harohalli - Bidadi - Kumbalagodu",
+        "speed": 30,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Harohalli Circle",
+                "lat": 12.6394,
+                "lng": 77.4389
+            },
+            {
+                "name": "Harohalli Forest Checkpost",
+                "lat": 12.6650,
+                "lng": 77.4100
+            },
+            {
+                "name": "Bidadi College",
+                "lat": 12.7850,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kumbalagodu Junction",
+                "lat": 12.8900,
+                "lng": 77.4500
+            }
+        ],
+        "lat": 12.6394,
+        "lng": 77.4389
+    },
+    {
+        "busNo": "KA-42-316",
+        "routeId": "HAR-BID-KUM",
+        "routeName": "Harohalli - Bidadi - Kumbalagodu",
+        "speed": 32,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Harohalli Circle",
+                "lat": 12.6394,
+                "lng": 77.4389
+            },
+            {
+                "name": "Harohalli Forest Checkpost",
+                "lat": 12.6650,
+                "lng": 77.4100
+            },
+            {
+                "name": "Bidadi College",
+                "lat": 12.7850,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kumbalagodu Junction",
+                "lat": 12.8900,
+                "lng": 77.4500
+            }
+        ],
+        "lat": 12.6650,
+        "lng": 77.4100
+    },
+    {
+        "busNo": "KA-42-317",
+        "routeId": "HAR-BID-KUM",
+        "routeName": "Harohalli - Bidadi - Kumbalagodu",
+        "speed": 29,
+        "currentStopIndex": 2,
+        "nextStopIndex": 3,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Harohalli Circle",
+                "lat": 12.6394,
+                "lng": 77.4389
+            },
+            {
+                "name": "Harohalli Forest Checkpost",
+                "lat": 12.6650,
+                "lng": 77.4100
+            },
+            {
+                "name": "Bidadi College",
+                "lat": 12.7850,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kumbalagodu Junction",
+                "lat": 12.8900,
+                "lng": 77.4500
+            }
+        ],
+        "lat": 12.7850,
+        "lng": 77.3800
+    },
+    {
+        "busNo": "KA-42-318",
+        "routeId": "HAR-BID-KUM",
+        "routeName": "Harohalli - Bidadi - Kumbalagodu",
+        "speed": 31,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Harohalli Circle",
+                "lat": 12.6394,
+                "lng": 77.4389
+            },
+            {
+                "name": "Harohalli Forest Checkpost",
+                "lat": 12.6650,
+                "lng": 77.4100
+            },
+            {
+                "name": "Bidadi College",
+                "lat": 12.7850,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kumbalagodu Junction",
+                "lat": 12.8900,
+                "lng": 77.4500
+            }
+        ],
+        "lat": 12.652,
+        "lng": 77.424
+    },
+    {
+        "busNo": "KA-43-401",
+        "routeId": "MGD-TVR-KNG",
+        "routeName": "Magadi - Tavarekere - Kengeri",
+        "speed": 28,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Magadi Bus Stand",
+                "lat": 12.9567,
+                "lng": 77.2244
+            },
+            {
+                "name": "Kempasandra",
+                "lat": 12.9600,
+                "lng": 77.3000
+            },
+            {
+                "name": "Tavarekere Gate",
+                "lat": 12.9720,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kengeri Bus Stand",
+                "lat": 12.9050,
+                "lng": 77.4760
+            }
+        ],
+        "lat": 12.9567,
+        "lng": 77.2244
+    },
+    {
+        "busNo": "KA-43-402",
+        "routeId": "MGD-TVR-KNG",
+        "routeName": "Magadi - Tavarekere - Kengeri",
+        "speed": 30,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Magadi Bus Stand",
+                "lat": 12.9567,
+                "lng": 77.2244
+            },
+            {
+                "name": "Kempasandra",
+                "lat": 12.9600,
+                "lng": 77.3000
+            },
+            {
+                "name": "Tavarekere Gate",
+                "lat": 12.9720,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kengeri Bus Stand",
+                "lat": 12.9050,
+                "lng": 77.4760
+            }
+        ],
+        "lat": 12.9600,
+        "lng": 77.3000
+    },
+    {
+        "busNo": "KA-43-403",
+        "routeId": "MGD-TVR-KNG",
+        "routeName": "Magadi - Tavarekere - Kengeri",
+        "speed": 27,
+        "currentStopIndex": 2,
+        "nextStopIndex": 3,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Magadi Bus Stand",
+                "lat": 12.9567,
+                "lng": 77.2244
+            },
+            {
+                "name": "Kempasandra",
+                "lat": 12.9600,
+                "lng": 77.3000
+            },
+            {
+                "name": "Tavarekere Gate",
+                "lat": 12.9720,
+                "lng": 77.3800
+            },
+            {
+                "name": "Kengeri Bus Stand",
+                "lat": 12.9050,
+                "lng": 77.4760
+            }
+        ],
+        "lat": 12.9720,
+        "lng": 77.3800
+    },
+    {
+        "busNo": "KA-56-221",
+        "routeId": "RMN-KNK",
+        "routeName": "Ramanagara - Halaguru - Kanakapura",
+        "speed": 32,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara",
+                "lat": 12.7210,
+                "lng": 77.2800
+            },
+            {
+                "name": "Halaguru",
+                "lat": 12.4200,
+                "lng": 77.1600
+            },
+            {
+                "name": "Sathanur Cross",
+                "lat": 12.4500,
+                "lng": 77.3000
+            },
+            {
+                "name": "Kanakapura Government Hospital",
+                "lat": 12.5450,
+                "lng": 77.4200
+            }
+        ],
+        "lat": 12.7210,
+        "lng": 77.2800
+    },
+    {
+        "busNo": "KA-56-222",
+        "routeId": "RMN-KNK",
+        "routeName": "Ramanagara - Halaguru - Kanakapura",
+        "speed": 34,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara",
+                "lat": 12.7210,
+                "lng": 77.2800
+            },
+            {
+                "name": "Halaguru",
+                "lat": 12.4200,
+                "lng": 77.1600
+            },
+            {
+                "name": "Sathanur Cross",
+                "lat": 12.4500,
+                "lng": 77.3000
+            },
+            {
+                "name": "Kanakapura Government Hospital",
+                "lat": 12.5450,
+                "lng": 77.4200
+            }
+        ],
+        "lat": 12.4200,
+        "lng": 77.1600
+    },
+    {
+        "busNo": "KA-56-223",
+        "routeId": "RMN-KNK",
+        "routeName": "Ramanagara - Halaguru - Kanakapura",
+        "speed": 31,
+        "currentStopIndex": 2,
+        "nextStopIndex": 3,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara",
+                "lat": 12.7210,
+                "lng": 77.2800
+            },
+            {
+                "name": "Halaguru",
+                "lat": 12.4200,
+                "lng": 77.1600
+            },
+            {
+                "name": "Sathanur Cross",
+                "lat": 12.4500,
+                "lng": 77.3000
+            },
+            {
+                "name": "Kanakapura Government Hospital",
+                "lat": 12.5450,
+                "lng": 77.4200
+            }
+        ],
+        "lat": 12.4500,
+        "lng": 77.3000
+    },
+    {
+        "busNo": "KA-01-900",
+        "routeId": "NICE-LINK",
+        "routeName": "Kengeri - NICE Road - Bannerghatta",
+        "speed": 45,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Kengeri TTMC",
+                "lat": 12.9060,
+                "lng": 77.4760
+            },
+            {
+                "name": "Sompur Toll",
+                "lat": 12.8700,
+                "lng": 77.5000
+            },
+            {
+                "name": "Bannerghatta Link Rd",
+                "lat": 12.8300,
+                "lng": 77.5800
+            }
+        ],
+        "legs": [
+            [
+                {
+                    "lat": 12.900,
+                    "lng": 77.480
+                },
+                {
+                    "lat": 12.890,
+                    "lng": 77.485
+                },
+                {
+                    "lat": 12.880,
+                    "lng": 77.490
+                }
+            ],
+            [
+                {
+                    "lat": 12.860,
+                    "lng": 77.520
+                },
+                {
+                    "lat": 12.850,
+                    "lng": 77.540
+                },
+                {
+                    "lat": 12.840,
+                    "lng": 77.560
+                }
+            ]
+        ],
+        "lat": 12.9060,
+        "lng": 77.4760
+    },
+    {
+        "busNo": "KA-01-901",
+        "routeId": "NICE-LINK",
+        "routeName": "Kengeri - NICE Road - Bannerghatta",
+        "speed": 48,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Kengeri TTMC",
+                "lat": 12.9060,
+                "lng": 77.4760
+            },
+            {
+                "name": "Sompur Toll",
+                "lat": 12.8700,
+                "lng": 77.5000
+            },
+            {
+                "name": "Bannerghatta Link Rd",
+                "lat": 12.8300,
+                "lng": 77.5800
+            }
+        ],
+        "lat": 12.8700,
+        "lng": 77.5000
+    },
+    {
+        "busNo": "KA-01-902",
+        "routeId": "NICE-LINK",
+        "routeName": "Kengeri - NICE Road - Bannerghatta",
+        "speed": 42,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Kengeri TTMC",
+                "lat": 12.9060,
+                "lng": 77.4760
+            },
+            {
+                "name": "Sompur Toll",
+                "lat": 12.8700,
+                "lng": 77.5000
+            },
+            {
+                "name": "Bannerghatta Link Rd",
+                "lat": 12.8300,
+                "lng": 77.5800
+            }
+        ],
+        "lat": 12.888,
+        "lng": 77.488
+    },
+    {
+        "busNo": "KA-53-777",
+        "routeId": "BID-WON",
+        "routeName": "Bidadi - Wonderla - Hejjala",
+        "speed": 25,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Bidadi Station",
+                "lat": 12.7980,
+                "lng": 77.3800
+            },
+            {
+                "name": "Wonderla Gate",
+                "lat": 12.8300,
+                "lng": 77.4000
+            },
+            {
+                "name": "Hejjala",
+                "lat": 12.8550,
+                "lng": 77.4200
+            }
+        ],
+        "lat": 12.7980,
+        "lng": 77.3800
+    },
+    {
+        "busNo": "KA-53-778",
+        "routeId": "BID-WON",
+        "routeName": "Bidadi - Wonderla - Hejjala",
+        "speed": 27,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Bidadi Station",
+                "lat": 12.7980,
+                "lng": 77.3800
+            },
+            {
+                "name": "Wonderla Gate",
+                "lat": 12.8300,
+                "lng": 77.4000
+            },
+            {
+                "name": "Hejjala",
+                "lat": 12.8550,
+                "lng": 77.4200
+            }
+        ],
+        "lat": 12.8300,
+        "lng": 77.4000
+    },
+    {
+        "busNo": "KA-53-779",
+        "routeId": "BID-WON",
+        "routeName": "Bidadi - Wonderla - Hejjala",
+        "speed": 24,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Bidadi Station",
+                "lat": 12.7980,
+                "lng": 77.3800
+            },
+            {
+                "name": "Wonderla Gate",
+                "lat": 12.8300,
+                "lng": 77.4000
+            },
+            {
+                "name": "Hejjala",
+                "lat": 12.8550,
+                "lng": 77.4200
+            }
+        ],
+        "lat": 12.814,
+        "lng": 77.390
+    },
+    {
+        "busNo": "KA-41-112",
+        "routeId": "RMN-KAIL",
+        "routeName": "Ramanagara - Kailancha - Revana Siddeshwara",
+        "speed": 22,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara DC Office",
+                "lat": 12.7250,
+                "lng": 77.2850
+            },
+            {
+                "name": "Kailancha Hub",
+                "lat": 12.7000,
+                "lng": 77.3200
+            },
+            {
+                "name": "Revana Siddeshwara Betta",
+                "lat": 12.6500,
+                "lng": 77.3500
+            }
+        ],
+        "lat": 12.7250,
+        "lng": 77.2850
+    },
+    {
+        "busNo": "KA-41-113",
+        "routeId": "RMN-KAIL",
+        "routeName": "Ramanagara - Kailancha - Revana Siddeshwara",
+        "speed": 24,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Ramanagara DC Office",
+                "lat": 12.7250,
+                "lng": 77.2850
+            },
+            {
+                "name": "Kailancha Hub",
+                "lat": 12.7000,
+                "lng": 77.3200
+            },
+            {
+                "name": "Revana Siddeshwara Betta",
+                "lat": 12.6500,
+                "lng": 77.3500
+            }
+        ],
+        "lat": 12.7000,
+        "lng": 77.3200
+    },
+    {
+        "busNo": "KA-41-114",
+        "routeId": "RMN-KAIL",
+        "routeName": "Ramanagara - Kailancha - Revana Siddeshwara",
+        "speed": 20,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Ramanagara DC Office",
+                "lat": 12.7250,
+                "lng": 77.2850
+            },
+            {
+                "name": "Kailancha Hub",
+                "lat": 12.7000,
+                "lng": 77.3200
+            },
+            {
+                "name": "Revana Siddeshwara Betta",
+                "lat": 12.6500,
+                "lng": 77.3500
+            }
+        ],
+        "lat": 12.7125,
+        "lng": 77.3025
+    },
+    {
+        "busNo": "KA-06-555",
+        "routeId": "MGD-KUN",
+        "routeName": "Magadi - Kunigal Cross - Savandurga",
+        "speed": 28,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Magadi Fort",
+                "lat": 12.9550,
+                "lng": 77.2250
+            },
+            {
+                "name": "Savandurga Base",
+                "lat": 12.9200,
+                "lng": 77.2800
+            },
+            {
+                "name": "Manchanabele Dam",
+                "lat": 12.8800,
+                "lng": 77.3300
+            }
+        ],
+        "lat": 12.9550,
+        "lng": 77.2250
+    },
+    {
+        "busNo": "KA-06-556",
+        "routeId": "MGD-KUN",
+        "routeName": "Magadi - Kunigal Cross - Savandurga",
+        "speed": 30,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Magadi Fort",
+                "lat": 12.9550,
+                "lng": 77.2250
+            },
+            {
+                "name": "Savandurga Base",
+                "lat": 12.9200,
+                "lng": 77.2800
+            },
+            {
+                "name": "Manchanabele Dam",
+                "lat": 12.8800,
+                "lng": 77.3300
+            }
+        ],
+        "lat": 12.9200,
+        "lng": 77.2800
+    },
+    {
+        "busNo": "KA-06-557",
+        "routeId": "MGD-KUN",
+        "routeName": "Magadi - Kunigal Cross - Savandurga",
+        "speed": 26,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Magadi Fort",
+                "lat": 12.9550,
+                "lng": 77.2250
+            },
+            {
+                "name": "Savandurga Base",
+                "lat": 12.9200,
+                "lng": 77.2800
+            },
+            {
+                "name": "Manchanabele Dam",
+                "lat": 12.8800,
+                "lng": 77.3300
+            }
+        ],
+        "lat": 12.9375,
+        "lng": 77.2525
+    },
+    {
+        "busNo": "KA-30-701",
+        "routeId": "CHN-RMN",
+        "routeName": "Channapatna - Ramanagara Shuttle",
+        "speed": 30,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Channapatna Bus Stand",
+                "lat": 12.6510,
+                "lng": 77.2080
+            },
+            {
+                "name": "Devarahosahalli",
+                "lat": 12.6800,
+                "lng": 77.2400
+            },
+            {
+                "name": "Ramanagara Arch",
+                "lat": 12.7200,
+                "lng": 77.2800
+            }
+        ],
+        "lat": 12.6510,
+        "lng": 77.2080
+    },
+    {
+        "busNo": "KA-30-702",
+        "routeId": "CHN-RMN",
+        "routeName": "Channapatna - Ramanagara Shuttle",
+        "speed": 32,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.0,
+        "stops": [
+            {
+                "name": "Channapatna Bus Stand",
+                "lat": 12.6510,
+                "lng": 77.2080
+            },
+            {
+                "name": "Devarahosahalli",
+                "lat": 12.6800,
+                "lng": 77.2400
+            },
+            {
+                "name": "Ramanagara Arch",
+                "lat": 12.7200,
+                "lng": 77.2800
+            }
+        ],
+        "lat": 12.6800,
+        "lng": 77.2400
+    },
+    {
+        "busNo": "KA-30-703",
+        "routeId": "CHN-RMN",
+        "routeName": "Channapatna - Ramanagara Shuttle",
+        "speed": 28,
+        "currentStopIndex": 0,
+        "nextStopIndex": 1,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Channapatna Bus Stand",
+                "lat": 12.6510,
+                "lng": 77.2080
+            },
+            {
+                "name": "Devarahosahalli",
+                "lat": 12.6800,
+                "lng": 77.2400
+            },
+            {
+                "name": "Ramanagara Arch",
+                "lat": 12.7200,
+                "lng": 77.2800
+            }
+        ],
+        "lat": 12.6655,
+        "lng": 77.2240
+    },
+    {
+        "busNo": "KA-30-704",
+        "routeId": "CHN-RMN",
+        "routeName": "Channapatna - Ramanagara Shuttle",
+        "speed": 29,
+        "currentStopIndex": 1,
+        "nextStopIndex": 2,
+        "progress": 0.5,
+        "stops": [
+            {
+                "name": "Channapatna Bus Stand",
+                "lat": 12.6510,
+                "lng": 77.2080
+            },
+            {
+                "name": "Devarahosahalli",
+                "lat": 12.6800,
+                "lng": 77.2400
+            },
+            {
+                "name": "Ramanagara Arch",
+                "lat": 12.7200,
+                "lng": 77.2800
+            }
+        ],
+        "lat": 12.7000,
+        "lng": 77.2600
+    }
+]

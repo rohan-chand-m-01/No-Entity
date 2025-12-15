@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '../hooks/useAppLanguage';
+import { voiceHandler } from '../assistant/voice';
 import { Send, Mic, Volume2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -19,6 +20,7 @@ interface ChatbotUIProps {
 const ChatbotUI: React.FC<ChatbotUIProps> = ({ messages, onSendMessage, isTyping }) => {
     const { t } = useLanguage();
     const [input, setInput] = useState('');
+    const [isListening, setIsListening] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     const scrollToBottom = () => {
@@ -38,8 +40,18 @@ const ChatbotUI: React.FC<ChatbotUIProps> = ({ messages, onSendMessage, isTyping
     };
 
     const handleSpeak = (text: string) => {
-        const utterance = new SpeechSynthesisUtterance(text);
-        window.speechSynthesis.speak(utterance);
+        try {
+            const utterance = new SpeechSynthesisUtterance(text);
+            // Attempt to match language based on text content (simple heuristic)
+            if (/[\u0C80-\u0CFF]/.test(text)) utterance.lang = 'kn-IN';
+            else if (/[\u0900-\u097F]/.test(text)) utterance.lang = 'hi-IN';
+            else utterance.lang = 'en-IN';
+
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(utterance);
+        } catch (e) {
+            console.error("TTS Failed:", e);
+        }
     };
 
     return (
@@ -71,7 +83,7 @@ const ChatbotUI: React.FC<ChatbotUIProps> = ({ messages, onSendMessage, isTyping
                         >
                             <div
                                 className={`max-w-[80%] rounded-2xl px-5 py-3 shadow-sm text-sm leading-relaxed flex flex-col ${msg.sender === 'user'
-                                    ? 'bg-primary text-white rounded-br-none'
+                                    ? 'bg-violet-700 text-white rounded-br-none'
                                     : 'bg-white dark:bg-surface text-primary border border-slate-200 dark:border-slate-700 rounded-bl-none'
                                     }`}
                             >
@@ -115,13 +127,41 @@ const ChatbotUI: React.FC<ChatbotUIProps> = ({ messages, onSendMessage, isTyping
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         placeholder={t.chat.placeholder}
-                        className="flex-1 px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent bg-slate-50 dark:bg-slate-900 text-sm text-primary placeholder:text-secondary"
+                        className="flex-1 px-4 py-3 border border-slate-200 dark:border-slate-700 rounded-lg focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent bg-slate-50 dark:bg-slate-900 text-sm text-primary dark:text-slate-100 placeholder:text-secondary"
                     />
                     <button
                         type="button"
-                        className="p-3 text-secondary hover:text-accent hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-700"
+                        onClick={() => {
+                            if (isListening) {
+                                voiceHandler.stopListening();
+                                setIsListening(false);
+                            } else {
+                                setIsListening(true);
+                                voiceHandler.startListening(
+                                    (text) => {
+                                        setInput(text);
+                                        // Optional: Auto-send on voice end? 
+                                        // For now let's just fill input so user can check
+                                        setIsListening(false);
+                                    },
+                                    (err) => {
+                                        console.error("Voice Error", err);
+                                        setIsListening(false);
+                                    },
+                                    // Use current app language or toggle? 
+                                    // Let's assume Kannada/Hindi based on some global state or allow toggle.
+                                    // For now default to 'kn' if we want to test Kannada, or 'en'.
+                                    // Ideally pass a prop `currentLang`.
+                                    'kn' // Hardcoding KN for demo or use proper selector
+                                );
+                            }
+                        }}
+                        className={`p-3 rounded-lg transition-colors border border-transparent ${isListening
+                            ? 'bg-red-100 text-red-500 animate-pulse border-red-200'
+                            : 'text-secondary hover:text-accent hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-200 dark:hover:border-slate-700'
+                            }`}
                     >
-                        <Mic className="w-5 h-5" />
+                        <Mic className={`w-5 h-5 ${isListening ? 'fill-current' : ''}`} />
                     </button>
                     <button
                         type="submit"

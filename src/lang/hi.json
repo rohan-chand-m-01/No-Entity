@@ -75,9 +75,9 @@
         }
     },
     "chat": {
-        "title": "वॉयस असिस्टेंट",
-        "headerTitle": "समर्थन सहायक",
-        "headerSubtitle": "लाइव एआई समर्थन",
+        "title": "गति सहायक",
+        "headerTitle": "गति सहायक",
+        "headerSubtitle": "आपका एआई यात्रा साथी",
         "placeholder": "अपना संदेश टाइप करें...",
         "speak": "जवाब सुनें",
         "listening": "सुन रहा है...",

@@ -1,0 +1,4 @@
+{
+    "sms_template": "ಬಸ್ {{busNo}} {{nextStop}} ತಲುಪಲು {{eta}} ಬೇಕು. ದೂರ: {{distance}} ಕಿ.ಮೀ. ಮಾರ್ಗ: {{route}}.",
+    "eta_text": "{{minutes}} ನಿಮಿಷ"
+}
