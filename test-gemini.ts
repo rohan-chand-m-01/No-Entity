@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const apiKey = "AIzaSyCp4nhh7-puQLWd6LMcSGvEJtZi6Ibvi3o";
+const apiKey = 
 
 async function run() {
     console.log("Testing Gemini API with key: " + apiKey.substring(0, 10) + "...");
