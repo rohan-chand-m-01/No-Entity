@@ -1,135 +1,107 @@
-<div align="center">
+# 🚌 LocalGati: Inclusive Public Transport Tracking
 
-  <h1>🚌 LocalGati (ಲೋಕಲ್‌ಗತಿ)</h1>
-  
-  <h3>Making Urban Mobility Accessible, Predictable, and Stress-Free for Everyone.</h3>
+![Status](https://img.shields.io/badge/Status-Prototype-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Stack](https://img.shields.io/badge/Stack-MERN-orange)
 
-  <p>
-    <a href="#-features">Features</a> •
-    <a href="#-tech-stack">Tech Stack</a> •
-    <a href="#-getting-started">Getting Started</a> •
-    <a href="#-roadmap">Roadmap</a>
-  </p>
-
-  ![Status](https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge&logo=statuspage)
-  ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge&logo=open-source-initiative)
-  ![Platform](https://img.shields.io/badge/Platform-Web-orange?style=for-the-badge&logo=google-chrome)
-
-</div>
-
-<br />
-
-## 📖 Overview
-
-**LocalGati** is a modern, inclusive, and accessible web application designed to bridge the gap between commuters and public transit systems. By leveraging technology, we aim to make bus tracking easy, distinct, and reliable for everyone, including those with disabilities or language barriers.
-
-> *"Public transport is the lifeline of any major city. We believe in an inclusive future where technology serves everyone."*
+**LocalGati** is a next-generation public transport companion app designed for **inclusive, real-time, and accessible** travel. It bridges the gap between complex transit data and everyday commuters using AI, Voice, and SMS technology.
 
 ---
 
 ## 🌟 Key Features
 
-| Feature | Description |
-| :--- | :--- |
-| **📍 Live Bus Tracking** | Real-time mock tracking of buses with detailed ETA, location statuses (e.g., "MG Road", "Marathahalli"), and crowd indicators. |
-| **🗣️ Multilingual Support** | Complete localization in **English**, **Kannada (ಕನ್ನಡ)**, and **Hindi (हिंदी)** to serve a diverse user base. |
-| **🤖 AI Chatbot Assistant** | Intelligent assistant powered by **Gemini AI** to answer queries like *"Where is bus 189?"* or *"When will the next bus arrive?"*. |
-| **📞 IVR Demo** | Accessibility-first "Call-to-SMS" simulation for non-smartphone users. Dial to receive status via SMS. |
-| **♿ Inclusive Design** | Built with accessibility in mind: high contrast colors, clear typography, screen-reader friendly architecture, and simple navigation. |
-| **📱 Responsive UI** | A seamless experience across manageable desktops, tablets, and mobile devices. |
+### 📍 Live Bus Tracking
+Real-time GPS tracking of buses with accurate ETAs. Visualized on an interactive map.
+
+### 🤖 Gati Sahayak (AI Assistant)
+Your personal travel companion.
+- **Voice-Enabled**: Speak to the assistant in natural language.
+- **Multilingual**: Supports English, Kannada (ಕನ್ನಡ), and Hindi (हिंदी).
+- **Context Aware**: Asks for relevant details ("Which bus stop?") to provide precise answers.
+
+### 📞 IVR & SMS Integration (Twilio)
+Bridging the digital divide for offline users.
+- **Simulated IVR**: A full in-browser IVR experience.
+- **Real SMS**: Integration with **Twilio** to send actual bus status alerts to your phone.
+- **Native Language Support**: IVR and SMS content automatically converts to Kannada/Hindi numerals and text.
+
+### ♿ Accessibility First
+Built for everyone.
+- High-contrast UI options.
+- Screen-reader friendly architecture.
+- Simple, intuitive navigation.
 
 ---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
-	<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-	<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-	<img src="https://img.shields.io/badge/Vite-B73C92?style=for-the-badge&logo=vite&logoColor=white" />
-	<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-	<img src="https://img.shields.io/badge/Gemini_AI-8E75B2?style=for-the-badge&logo=google-bard&logoColor=white" />
-</div>
-
-*   **Frontend**: React 18, TypeScript, Vite
-*   **Styling**: Tailwind CSS, Framer Motion (Animations)
-*   **Mapping**: Leaflet / React-Leaflet
-*   **Icons**: Lucide React
-*   **Routing**: React Router DOM
+- **Frontend**: React, TypeScript, Tailwind CSS, Framer Motion
+- **Backend**: Node.js, Express
+- **Integrations**: Twilio (SMS/Voice), OpenStreetMap (Leaflet)
+- **Tools**: Vite, Lucide React
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these steps to run the project locally on your machine.
-
 ### Prerequisites
-*   Node.js (v16 or higher)
-*   npm or yarn
+- Node.js (v16+)
+- Twilio Account (for SMS features)
 
 ### Installation
 
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/rohan-chand-m-01/No-Entity.git
-    cd No-Entity
-    ```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/rohan-chand-m-01/No-Entity.git
+   cd No-Entity
+   ```
 
-2.  **Install dependencies**
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+2. **Install Dependencies**
+   ```bash
+   npm install
+   cd backend && npm install && cd ..
+   ```
 
-3.  **Start the development server**
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
+3. **Environment Setup**
+   Create a `.env` file in the `backend` directory:
+   ```env
+   PORT=5000
+   TWILIO_ACCOUNT_SID=your_sid
+   TWILIO_AUTH_TOKEN=your_token
+   TWILIO_PHONE_NUMBER=your_twilio_number
+   ```
 
-4.  **Open in Browser**
-    Navigate to `http://localhost:5173` to experience LocalGati.
+4. **Run the Application**
+   ```bash
+   # Terminal 1: Frontend
+   npm run dev
+
+   # Terminal 2: Backend
+   node backend/src/server.js
+   ```
+
+5. **Open in Browser**
+   Navigate to `http://localhost:5173`.
 
 ---
 
-## 📂 Project Structure
+## 📱 How to Demo the IVR System
 
-```bash
-src/
-├── api/            # Mock API services (simulation for Bus, SMS, IVR)
-├── components/     # Reusable UI components (Navbar, Footer, Maps, etc.)
-├── data/           # Static mock data (buses.json)
-├── hooks/          # Custom hooks (useAppLanguage, Theme handling)
-├── lang/           # Localization files (en.json, hi.json, kn.json)
-├── pages/          # Application views (Home, LiveTracking, Chatbot, IVR)
-└── App.tsx         # Main entry point
-```
+1. Go to the **Call Demo** page.
+2. Enter your **real mobile number** (e.g., 9988776655).
+3. Select your language (English, Kannada, or Hindi).
+4. Enter a bus number (e.g., `189`, `335E`).
+5. **Watch the Magic**: 
+   - The on-screen phone simulates the call.
+   - You receive a **real SMS** on your mobile device!
+   - In Kannada mode, enjoy full native digit support (e.g., `೯೯೯`).
 
 ---
 
 ## 🔮 Future Roadmap
 
-*   [ ] Integration with real-time GPS hardware APIs (GTFS).
-*   [ ] Backend implementation for user authentication & preferences.
-*   [ ] Real-time SMS gateway integration (Twilio/Exotel).
-*   [ ] Voice-enabled navigation for the blind.
+- [ ] Whatsapp Bot Integration
+- [ ] Crowdsourced Bus Occupancy Data
+- [ ] Offline Maps Support
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
----
-
-<div align="center">
-  <p>Developed with ❤️ for <strong>Inclusive Mobility</strong> by <strong>Team No Entity</strong></p>
-  <p>© 2025 LocalGati. All rights reserved.</p>
-</div>
+Made with ❤️ for **Bengaluru Commuters**.

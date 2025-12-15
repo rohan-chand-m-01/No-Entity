@@ -58,5 +58,21 @@ export const busService = {
             console.error('Error fetching SMS format:', error);
             return null;
         }
+    },
+
+    async sendSimulatedSms(phone: string, busNo: string, lang: 'en' | 'kn' | 'hi'): Promise<{ status: string; message: string } | null> {
+        try {
+            const response = await fetch(`http://localhost:5000/ivr/simulate-sms`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ phone, busNo, lang })
+            });
+
+            if (!response.ok) return null;
+            return await response.json();
+        } catch (error) {
+            console.error('Error sending simulated SMS:', error);
+            return null;
+        }
     }
 };

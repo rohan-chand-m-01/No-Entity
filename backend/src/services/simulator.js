@@ -110,7 +110,12 @@ function updateBusPosition(bus) {
 }
 
 function getBus(busNo) {
-    return buses.find(b => b.busNo === busNo);
+    const exactMatch = buses.find(b => b.busNo === busNo);
+    if (exactMatch) return exactMatch;
+
+    // Try matching if the busNo ends with the input (e.g. "KA-01-189" matches "189")
+    // or if the input is contained in the busNo
+    return buses.find(b => b.busNo.includes(busNo));
 }
 
 function getAllBuses() {

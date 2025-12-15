@@ -138,4 +138,64 @@ router.post('/send-sms', async (req, res) => {
     res.send(twiml.toString());
 });
 
+// 5. POST /ivr/call-user (Outbound Trigger)
+router.post('/call-user', async (req, res) => {
+    const userPhone = req.body.phone || process.env.TWILIO_PHONE_NUMBER; // Target phone
+    const publicUrl = process.env.PUBLIC_URL; // ngrok/localtunnel URL
+
+    if (!publicUrl) {
+        return res.status(500).json({ error: "PUBLIC_URL not configured in .env" });
+    }
+
+    if (!client) {
+        return res.status(500).json({ error: "Twilio client not initialized" });
+    }
+
+    try {
+        const call = await client.calls.create({
+            url: `${publicUrl}/ivr/welcome`,
+            to: userPhone,
+            from: process.env.TWILIO_PHONE_NUMBER
+        });
+
+        res.json({ success: true, callSid: call.sid, message: "Calling user..." });
+    } catch (error) {
+        console.error("Outbound Call Error:", error);
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// 6. POST /ivr/simulate-sms (Frontend Simulation Trigger)
+router.post('/simulate-sms', async (req, res) => {
+    const { phone, busNo, lang } = req.body;
+
+    if (!phone || !busNo) {
+        return res.status(400).json({ status: 'error', message: 'Missing phone or busNo' });
+    }
+
+    if (!client) {
+        return res.status(500).json({ status: 'error', message: 'Twilio client not initialized' });
+    }
+
+    try {
+        const bus = simulator.getBus(busNo);
+        if (bus) {
+            const smsText = smsFormatter.formatSMS(bus, lang || 'en');
+
+            await client.messages.create({
+                body: smsText,
+                from: process.env.TWILIO_PHONE_NUMBER,
+                to: phone
+            });
+
+            res.json({ status: 'sent', message: smsText });
+        } else {
+            res.status(404).json({ status: 'error', message: 'Bus not found' });
+        }
+    } catch (error) {
+        console.error("Simulation SMS Error:", error);
+        res.status(500).json({ status: 'error', message: error.message });
+    }
+});
+
 module.exports = router;

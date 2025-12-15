@@ -85,6 +85,7 @@
   },
   "ivr": {
     "title": "Call-to-SMS Demo",
+    "subtitle": "Experience our IVR system right here. Enter your phone number, follow the prompts, and receive a real SMS on your phone via Twilio.",
     "instruction": "Simulate a phone call interaction.",
     "simulateBtn": "Simulate Call",
     "smsReceived": "SMS Received:",
@@ -98,15 +99,41 @@
         "desc": "Get instant details about bus location and ETA via SMS."
       }
     },
+    "interactiveMenu": {
+      "title": "Interactive Menu",
+      "desc": "Navigate through language selection and inputs just like a real phone call."
+    },
+    "realSms": {
+      "title": "Real SMS Integration",
+      "desc": "We use Twilio to send the actual bus status to the number you enter."
+    },
     "demoTitle": "Try the Demo",
     "demoDesc": "Enter a number to simulate an IVR response.",
     "phoneLabel": "Phone Number",
+    "enterMobile": "Enter your mobile number to start",
+    "startCallButton": "Start Call",
+    "selectLanguage": "Select your language / Bhasha",
+    "languages": {
+      "en": "1. English",
+      "kn": "2. ಕನ್ನಡ",
+      "hi": "3. हिंदी"
+    },
+    "busInput": {
+      "label": "Enter 3-digit Bus Number"
+    },
     "badge": "Accessible Transit",
     "status": {
       "processing": "Processing...",
       "success": "Sent Successfully",
       "error": "Failed to send SMS.",
-      "sentTo": "SMS sent to"
+      "sentTo": "SMS sent to",
+      "sendingSms": "Sending SMS...",
+      "checkingDetails": "Checking details...",
+      "messageSent": "Message Sent!",
+      "sentDetail": "We have sent the bus details to",
+      "restart": "Start Valid Call",
+      "messageHeader": "Messages • Now",
+      "messageSubHeader": "LocalGati Alert"
     },
     "note": "Note: This is a simulation. No real phone call is made."
   },
