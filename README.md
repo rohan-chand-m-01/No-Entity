@@ -1,107 +1,111 @@
+
 # 🚌 LocalGati: Inclusive Public Transport Tracking
 
-![Status](https://img.shields.io/badge/Status-Prototype-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Stack](https://img.shields.io/badge/Stack-MERN-orange)
+<div align="center">
+  <h3>Bridging the Gap Between Commuters and Public Transit</h3>
+  <p>An AI-powered, Voice-enabled, and SMS-integrated solution for Bengaluru's Buses.</p>
 
-**LocalGati** is a next-generation public transport companion app designed for **inclusive, real-time, and accessible** travel. It bridges the gap between complex transit data and everyday commuters using AI, Voice, and SMS technology.
-
----
-
-## 🌟 Key Features
-
-### 📍 Live Bus Tracking
-Real-time GPS tracking of buses with accurate ETAs. Visualized on an interactive map.
-
-### 🤖 Gati Sahayak (AI Assistant)
-Your personal travel companion.
-- **Voice-Enabled**: Speak to the assistant in natural language.
-- **Multilingual**: Supports English, Kannada (ಕನ್ನಡ), and Hindi (हिंदी).
-- **Context Aware**: Asks for relevant details ("Which bus stop?") to provide precise answers.
-
-### 📞 IVR & SMS Integration (Twilio)
-Bridging the digital divide for offline users.
-- **Simulated IVR**: A full in-browser IVR experience.
-- **Real SMS**: Integration with **Twilio** to send actual bus status alerts to your phone.
-- **Native Language Support**: IVR and SMS content automatically converts to Kannada/Hindi numerals and text.
-
-### ♿ Accessibility First
-Built for everyone.
-- High-contrast UI options.
-- Screen-reader friendly architecture.
-- Simple, intuitive navigation.
+  [![Status](https://img.shields.io/badge/Status-Prototype-blue?style=for-the-badge&logo=appveyor)](https://github.com/rohan-chand-m-01/No-Entity)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+  [![Stack](https://img.shields.io/badge/Stack-MERN-orange?style=for-the-badge&logo=react)](https://reactjs.org/)
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Overview
 
-- **Frontend**: React, TypeScript, Tailwind CSS, Framer Motion
-- **Backend**: Node.js, Express
-- **Integrations**: Twilio (SMS/Voice), OpenStreetMap (Leaflet)
-- **Tools**: Vite, Lucide React
+**LocalGati** empowers every commuter—regardless of language, tech-savviness, or internet access—to travel with confidence. 
+
+We solve the "Information Black Hole" in public transport by providing **Verified** bus data through three accessible channels:
+1.  **Web App**: Real-time Maps & Live Tracking.
+2.  **Voice AI**: A conversational assistant ("Gati Sahayak").
+3.  **Offline IVR**: A toll-free number for SMS updates on feature phones.
+
+---
+
+## 🚀 Key Features
+
+| Feature | Description | Preview |
+| :--- | :--- | :--- |
+| **📍 Live Tracking** | Real-time GPS location of buses with accurate ETAs and route visualization. | *(Map View)* |
+| **🤖 Gati Sahayak** | **Voice-Activated AI Assistant.** Speak in English, Kannada, or Hindi to find your bus instantly. | <img src="assets/assistant.png" width="200" /> |
+| **📞 IVR & SMS** | **No Internet? No Problem.** Call our hotline, enter your bus number, and get an instant SMS. Fully localized for Kannada users. | <img src="assets/ivr-success.webp" width="200" /> |
+| **♿ Accessibility** | Native digit support (೦-೯) for Kannada, high-contrast UI, and screen reader compatibility. | *(Inclusive UI)* |
+
+---
+
+## 🛠️ Technology Stack
+
+*   **Frontend**: React `(v18)`, TypeScript, Tailwind CSS, Framer Motion
+*   **Backend**: Node.js, Express, Twilio SDK
+*   **AI/ML**: Web Speech API (Voice Recognition), Custom Simulator Logic
+*   **Services**: OpenStreetMap (Leaflet), Twilio API (SMS/Voice)
 
 ---
 
 ## 🚀 Getting Started
 
+Follow these steps to set up LocalGati locally.
+
 ### Prerequisites
-- Node.js (v16+)
-- Twilio Account (for SMS features)
+*   Node.js `v16.0.0` or higher
+*   Twilio Account (SID & Auth Token)
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/rohan-chand-m-01/No-Entity.git
-   cd No-Entity
-   ```
+1.  **Clone the Repo**
+    ```bash
+    git clone https://github.com/rohan-chand-m-01/No-Entity.git
+    cd No-Entity
+    ```
 
-2. **Install Dependencies**
-   ```bash
-   npm install
-   cd backend && npm install && cd ..
-   ```
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    cd backend && npm install && cd ..
+    ```
 
-3. **Environment Setup**
-   Create a `.env` file in the `backend` directory:
-   ```env
-   PORT=5000
-   TWILIO_ACCOUNT_SID=your_sid
-   TWILIO_AUTH_TOKEN=your_token
-   TWILIO_PHONE_NUMBER=your_twilio_number
-   ```
+3.  **Configure Environment**
+    Create `backend/.env` with your credentials:
+    ```env
+    PORT=5000
+    TWILIO_ACCOUNT_SID=your_sid
+    TWILIO_AUTH_TOKEN=your_token
+    TWILIO_PHONE_NUMBER=your_number
+    ```
 
-4. **Run the Application**
-   ```bash
-   # Terminal 1: Frontend
-   npm run dev
+4.  **Run the App**
+    ```bash
+    # Terminal 1 (Frontend)
+    npm run dev
 
-   # Terminal 2: Backend
-   node backend/src/server.js
-   ```
+    # Terminal 2 (Backend)
+    node backend/src/server.js
+    ```
 
-5. **Open in Browser**
-   Navigate to `http://localhost:5173`.
-
----
-
-## 📱 How to Demo the IVR System
-
-1. Go to the **Call Demo** page.
-2. Enter your **real mobile number** (e.g., 9988776655).
-3. Select your language (English, Kannada, or Hindi).
-4. Enter a bus number (e.g., `189`, `335E`).
-5. **Watch the Magic**: 
-   - The on-screen phone simulates the call.
-   - You receive a **real SMS** on your mobile device!
-   - In Kannada mode, enjoy full native digit support (e.g., `೯೯೯`).
+5.  **Visit App**: `http://localhost:5173`
 
 ---
 
-## 🔮 Future Roadmap
+## 📱 How to Demo the IVR Integration
 
-- [ ] Whatsapp Bot Integration
-- [ ] Crowdsourced Bus Occupancy Data
-- [ ] Offline Maps Support
+> **Note**: This demo simulates the IVR experience in the browser but triggers **REAL** SMS messages to your phone.
+
+1.  Navigate to **"Call Demo"** in the Navbar.
+2.  **Enter your Phone Number**: Use a valid 10-digit Indian mobile number.
+3.  **Select Language**: Choose **Kannada (ಕನ್ನಡ)** to see the UI transform with native digits.
+4.  **Simulate Call**: Click "Start Call" (or "ಕರೆ ಪ್ರಾರಂಭಿಸಿ").
+5.  **Enter Bus Code**: Type `189` on the keypad.
+6.  **Success!** You will receive an SMS: *"Bus 189 is arriving in 5 mins at Majestic."*
 
 ---
 
-Made with ❤️ for **Bengaluru Commuters**.
+## 🤝 Contributing
+
+We welcome contributions! Please fork the repository and submit a Pull Request.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ for Namma Bengaluru 🇮🇳</p>
+</div>
