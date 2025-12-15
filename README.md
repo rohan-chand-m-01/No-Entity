@@ -78,4 +78,4 @@ src/
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
-Developed with ❤️ for inclusive mobility.
+Developed with ❤️ for inclusive mobility by team- No Entity
